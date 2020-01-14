@@ -1,0 +1,26 @@
+h1 {
+  font-size: 28px;
+  color: blue;
+  text-align: center;
+}
+.container {
+  border: dashed;
+  border-color: grey;
+  padding: 20px;
+}
+
+.col {
+  display: flex;
+  text-align: center;
+}
+
+.content-box {
+  align-content: center;
+}
+
+#btn1 {
+  justify-content: start;
+}
+#btn2 {
+  justify-content: end;
+}
