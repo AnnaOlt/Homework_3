@@ -3,18 +3,16 @@ h1 {
   color: blue;
   text-align: center;
 }
-.container {
+.container-md {
   border: dashed;
   border-color: grey;
   padding: 20px;
+  border-radius: 25px;
 }
 
-.col {
-  display: flex;
-  text-align: center;
+.col-md-12{
+  display: contents;
 }
-
-.content-box {
   align-content: center;
 }
 

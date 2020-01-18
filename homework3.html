@@ -15,34 +15,53 @@
   </head>
   <body>
     <h1>Password Generator</h1>
-    <div class="container">
+
+    <div class="container-md">
+      <h2>Generate a Password</h2>
+
       <div class="row">
-        <h2>Generate a Password</h2>
-      </div>
-      <div class="content-box">
-        <div class="row">
-          <div class="col">
-            <div class="form-group">
-              <input
-                type="text-area"
-                class="form-control"
-                placeholder="Your Secure Password"
-              />
-              <div class="row">
-                <button type="submit" id="btn1" class="btn btn-danger">
-                  Generate Password
-                </button>
-                <button type="submit" id="btn2" class="btn btn-secondary">
-                  Copy to Clipboard
-                </button>
-              </div>
-            </div>
+        <div class="col-md-12">
+         
+          
+          
+            <form>
+            <output
+              name="password-text"
+              class="form-control"
+              id="randomPassword"
+              for=" btn1, btn2"
+              value=".."
+              placeholder="Your Secure Password"></output>
+            
+            <!-- <div class="row"> -->
+          
+            <button
+              onclick="generateRandom()"
+              value="result"
+              type="button"
+              id="btn1"
+              class="btn btn-danger"
+            >
+              Generate Password
+            </button>
+          
+            <button
+              onclick="copyRandom()"
+              value="result"
+              type="button"
+              id="btn2"
+              class="btn btn-secondary"
+            >
+              Copy to Clipboard
+            </button>
+            <!-- </div> -->
+          </form>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="homework3.js"></script>
+    <script src="homework3.js"></script></script>>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
