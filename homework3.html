@@ -15,53 +15,51 @@
   </head>
   <body>
     <h1>Password Generator</h1>
-
-    <div class="container-md">
-      <h2>Generate a Password</h2>
-
-      <div class="row">
-        <div class="col-md-12">
-         
-          
-          
+    <br />
+    <div class="flex-container">
+      <div class="content">
+        <div class="row">
+          <div class="col-md-auto">
             <form>
-            <output
-              name="password-text"
-              class="form-control"
-              id="randomPassword"
-              for=" btn1, btn2"
-              value=".."
-              placeholder="Your Secure Password"></output>
-            
-            <!-- <div class="row"> -->
-          
-            <button
-              onclick="generateRandom()"
-              value="result"
-              type="button"
-              id="btn1"
-              class="btn btn-danger"
-            >
-              Generate Password
-            </button>
-          
-            <button
-              onclick="copyRandom()"
-              value="result"
-              type="button"
-              id="btn2"
-              class="btn btn-secondary"
-            >
-              Copy to Clipboard
-            </button>
-            <!-- </div> -->
-          </form>
+              <h2>Generate a Password</h2>
+              <input
+                type="text"
+                class="form-control"
+                id="randomPassword"
+                for=" btn1, btn2"
+                placeholder="Your Secure Password"
+              />
+
+              <input type="range" min="8" max="50" id="howLong" />
+
+              <button
+                onclick="generateRandom()"
+                value="result"
+                type="button"
+                id="btn1"
+                class="btn btn-danger"
+              >
+                Generate Password
+              </button>
+
+              <button
+                onclick="copyRandom()"
+                value="result"
+                type="button"
+                id="btn2"
+                class="btn btn-secondary"
+              >
+                Copy to Clipboard
+              </button>
+              <!-- </div> -->
+            </form>
+            <div id="lastPassword"></div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="homework3.js"></script></script>>
+    <script src="homework3.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

@@ -2,23 +2,46 @@ h1 {
   font-size: 28px;
   color: blue;
   text-align: center;
-}
-.container-md {
-  border: dashed;
-  border-color: grey;
-  padding: 20px;
-  border-radius: 25px;
+  margin-top: 20px;
 }
 
-.col-md-12{
-  display: contents;
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
+
+.flex-container {
+  display: flex;
+  height: 250px;
+  width: max-content;
+  border: dashed;
+  box-sizing: content-box;
+  border-color: grey;
+  border-radius: 15px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  display: block;
   align-content: center;
+  padding: 30px;
+  width: 100%;
+}
+
+#randomPassword {
+  rows: 4;
+  height: 150;
+}
+
+#howLong {
+  width: 100%;
 }
 
 #btn1 {
-  justify-content: start;
+  float: left;
 }
 #btn2 {
-  justify-content: end;
+  float: right;
 }
